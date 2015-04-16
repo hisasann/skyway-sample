@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@import "compass";
+@import "partial/animate";
+@import "partial/keyframes";
+
+video {
+  margin: 10px;
+}
+
+.text {
+  margin: 5px;
+  border: 1px solid;
+}
+
+.button {
+  margin: 5px;
+  border: 1px solid;
+  cursor: pointer;
+}
