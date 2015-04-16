@@ -37,22 +37,22 @@ var Component = React.createClass({
 
     this.showMyVideo();
 
-    let myVideo = $('#my-video');
-    myVideo.jrumble({
-      x: 10,
-      y: 10,
-      rotation: 4,
-      speed: 70
-    });
-    myVideo.trigger('startRumble');
-    let peerVideo = $('#peer-video');
-    peerVideo.jrumble({
-      x: 10,
-      y: 10,
-      rotation: 4,
-      speed: 70
-    });
-    peerVideo.trigger('startRumble');
+    //let myVideo = $('#my-video');
+    //myVideo.jrumble({
+    //  x: 10,
+    //  y: 10,
+    //  rotation: 4,
+    //  speed: 70
+    //});
+    //myVideo.trigger('startRumble');
+    //let peerVideo = $('#peer-video');
+    //peerVideo.jrumble({
+    //  x: 10,
+    //  y: 10,
+    //  rotation: 4,
+    //  speed: 70
+    //});
+    //peerVideo.trigger('startRumble');
   },
   makeCall() {
     var calleeId = this.state.calleeValue;
