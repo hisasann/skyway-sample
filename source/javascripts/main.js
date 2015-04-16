@@ -36,6 +36,23 @@ var Component = React.createClass({
     });
 
     this.showMyVideo();
+
+    let myVideo = $('#my-video');
+    myVideo.jrumble({
+      x: 10,
+      y: 10,
+      rotation: 4,
+      speed: 70
+    });
+    myVideo.trigger('startRumble');
+    let peerVideo = $('#peer-video');
+    peerVideo.jrumble({
+      x: 10,
+      y: 10,
+      rotation: 4,
+      speed: 70
+    });
+    peerVideo.trigger('startRumble');
   },
   makeCall() {
     var calleeId = this.state.calleeValue;
@@ -88,8 +105,8 @@ var Component = React.createClass({
         <h1>WebRTC(Skyway) Video Chat</h1>
 
         <div id="video-container">
-          <video id="my-video" ref="myVideo" muted="true" width="200px" autoplay></video>
-          <video id="peer-video" ref="peerVideo" width="200px" autoplay></video>
+          <video id="my-video" className="my-video" ref="myVideo" muted="true" width="400px" autoplay></video>
+          <video id="peer-video" className="peer-video" ref="peerVideo" width="400px" autoplay></video>
         </div>
 
         <div>
@@ -102,7 +119,7 @@ var Component = React.createClass({
             <input type="text" className="text" placeholder="input user id ..." onChange={this.calleeChange} />
           </p>
           <p>
-            <button className="button" onClick={this.makeCall}>Call button</button>
+            <button id="hoge" className="button" onClick={this.makeCall}>Call button</button>
             <button className="button" onClick={this.endCall}>End call button</button>
           </p>
         </div>

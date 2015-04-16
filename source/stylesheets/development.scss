@@ -8,6 +8,15 @@ video {
   margin: 10px;
 }
 
+.my-video {
+  -webkit-filter: #{"saturate(100)"}
+}
+
+.peer-video {
+//  -webkit-filter: #{"hue-rotate(120deg) blur(4px)"}
+  -webkit-filter: #{"invert() blur(4px)"}
+}
+
 .text {
   margin: 5px;
   border: 1px solid;

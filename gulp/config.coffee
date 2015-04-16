@@ -32,6 +32,7 @@ module.exports = {
       './bower_components/jquery/dist/jquery.js'
       './bower_components/velocity/jquery.velocity.js'
       './bower_components/jquery.easing/js/jquery.easing.js'
+      './bower_components/jrumble/jquery.jrumble.js'
       './bower_components/lo/lo.js'
     ]
     dest: './build/javascripts/'
